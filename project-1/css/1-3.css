@@ -1,0 +1,23 @@
+h1 {
+    font-weight: normal;
+    font-family: 'Rubik Beastly', cursive;
+    text-align: center;
+    letter-spacing: 0em;
+    line-height: 0em;
+    font-size: 6em;
+}
+
+.cabbage {
+    font-size: 2em;
+    text-align: center;
+    line-height: 0em;
+}
+
+p {
+    /*    font-family:;*/
+    text-align: center;
+    /*    text-transform: uppercase;*/
+    font-size: 2em;
+    letter-spacing: -0.05em;
+    /*    letter-spacing: 1em;*/
+}

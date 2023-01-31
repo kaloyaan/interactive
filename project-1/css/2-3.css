@@ -1,0 +1,31 @@
+h1 {
+    font-weight: normal;
+    font-family: cursive;
+    text-align: center;
+    /*    letter-spacing: 0em;*/
+    line-height: 0.2em;
+    font-size: 8em;
+}
+
+.cabbage {
+    font-size: 2em;
+    text-align: center;
+    line-height: 0em;
+}
+
+p {
+    /*    font-family:;*/
+    text-align: center;
+    /*    text-transform: uppercase;*/
+    font-size: 2em;
+    letter-spacing: -0.05em;
+    /*    letter-spacing: 1em;*/
+}
+
+a {
+    text-decoration: none
+}
+
+.cheese {
+    letter-spacing: -0.6em;
+}
