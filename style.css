@@ -4,6 +4,7 @@
     margin: auto auto;
     align-content: space-between;
     transform: rotate(10deg);
+    max-width: 200px;
 }
 
 #content {

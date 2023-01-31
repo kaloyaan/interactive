@@ -1,0 +1,59 @@
+body {
+    margin: 0 0;
+}
+
+img {
+    width: 100%;
+    margin: 0em 0em;
+    padding: 0 0;
+    display: block;
+}
+
+#img-0 {
+    position: fixed;
+    /*    height: 100%;*/
+    mix-blend-mode: difference;
+}
+
+#img-1 {
+    position: fixed;
+    /*    height: 100%;*/
+    mix-blend-mode: difference;
+}
+
+#img-2 {
+
+    position: fixed;
+    mix-blend-mode: darken;
+}
+
+#img-3 {}
+
+#img-4 {}
+
+#img-5 {
+    /*    mix-blend-mode: exclusion;*/
+}
+
+#img-6 {}
+
+#img-7 {
+    position: fixed;
+    height: 100%;
+    mix-blend-mode: difference;
+
+}
+
+#img-8 {}
+
+#img-9 {}
+
+#img-10 {}
+
+#img-11 {}
+
+#images {
+    padding: 0 0;
+    margin: 0 0;
+    /*    display: inline;*/
+}
