@@ -1,0 +1,19 @@
+.box {
+    padding: 2em;
+    display: inline-flex;
+    margin: auto auto;
+    align-content: space-between;
+    transform: rotate(10deg);
+}
+
+#content {
+    margin: 10em auto;
+}
+
+h1 {
+    font-family: sans-serif
+}
+
+p {
+    font-family: sans-serif
+}
