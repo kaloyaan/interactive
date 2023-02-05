@@ -1,20 +1,71 @@
+body {
+    background-image: url('images/timelapse.gif');
+    background-size: cover;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    color: yellow;
+}
+
+
 .box {
     padding: 2em;
     display: inline-flex;
+    flex-direction: column;
     margin: auto auto;
-    align-content: space-between;
+    align-content: stretch;
+    justify-content: center;
+    align-items: center;
     transform: rotate(10deg);
     max-width: 200px;
 }
 
+
 #content {
-    margin: 10em auto;
+    margin: 20vh 20vh;
 }
 
 h1 {
-    font-family: sans-serif
+    font-family: sans-serif;
+    text-shadow: 0px 0px 10px yellow;
+
 }
 
+/* unvisited link */
+a:link {
+    color: yellow;
+}
+
+/* visited link */
+a:visited {
+    color: yellow;
+}
+
+/* mouse over link */
+a:hover {
+    color: blue;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+
 p {
-    font-family: sans-serif
+    font-family: sans-serif;
+    text-shadow: 0px 0px 10px yellow;
+    font-size: 1.5em;
+    /*
+text-shadow: 0 0 7px yellow,
+0 0 10px yellow,
+
+0 0 21px #fff,
+0 0 42px #0fa,
+
+0 0 82px #0fa,
+0 0 92px #0fa,
+0 0 102px yellow,
+0 0 151px #0fa;
+*/
 }
