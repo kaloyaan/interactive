@@ -18,7 +18,7 @@ body {
     /*    padding: 1em 1em;*/
     height: 100%;
     overflow: scroll;
-    transition: all linear 1s;
+    transition: all linear 10s;
 }
 
 .article:first-child {
