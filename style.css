@@ -1,32 +1,46 @@
 body {
-    background-image: url('images/timelapse.gif');
-    background-size: cover;
+    background-image: url('images/bio.png');
+    background-size: contain;
     height: 100vh;
     padding: 0;
     margin: 0;
     color: yellow;
 }
 
+#humans {
+    position: absolute;
+    text-align: center;
+    /*    top: -5vh;*/
+    line-height: 600%;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    mix-blend-mode: multiply;
+}
 
 .box {
     padding: 2em;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     margin: auto auto;
     align-content: stretch;
     justify-content: center;
     align-items: center;
-    transform: rotate(10deg);
+    /*    transform: rotate(10deg);*/
     max-width: 200px;
 }
 
 
 #content {
-    margin: 20vh 20vh;
+    margin: 1em 1em;
+    text-align: center;
+    mix-blend-mode: exclusion;
 }
 
 h1 {
     font-family: sans-serif;
+    font-size: 600%;
     text-shadow: 0px 0px 10px yellow;
 
 }
