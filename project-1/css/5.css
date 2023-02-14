@@ -106,8 +106,44 @@ h2 {
     font-weight: 800;
 }
 
+.image img {
+    position: fixed;
+    width: 150px;
+    mix-blend-mode: normal;
+    transition: all ease 1s;
+
+}
+
+
+#cabbage {
+    top: 15%;
+    left: 60%;
+}
+
+#potato {
+    top: 80%;
+    left: 15%;
+}
+
+#flower {
+    top: 55%;
+    left: 95%;
+}
+
 
 html.translated-ltr .article {
     /*    transform: translateX(300px) translateY(200px);*/
     transform: rotateZ(2160deg) rotateY(360deg);
+}
+
+html.translated-ltr img {
+    filter: opacity(0);
+}
+
+
+.header-text {
+    display: flex;
+    justify-content: center;
+    /*        padding: 0 0;*/
+    /*    font-size: 200%;*/
 }
