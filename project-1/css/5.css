@@ -21,7 +21,7 @@ body {
     /*    padding: 1em 1em;*/
     height: 100%;
     overflow: scroll;
-    transition: all ease 0.3s;
+    transition: all ease 10s;
 }
 
 .article:first-child {
@@ -109,5 +109,5 @@ h2 {
 
 html.translated-ltr .article {
     /*    transform: translateX(300px) translateY(200px);*/
-    transform: rotateZ(180deg);
+    transform: rotateZ(2160deg) rotateY(360deg);
 }
