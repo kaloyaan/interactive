@@ -1,0 +1,153 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Literata', serif;
+    background-color: rosybrown;
+    letter-spacing: -1px;
+}
+
+.container {
+    height: 100%;
+    overflow-y: hidden;
+    text-align: left;
+    display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        height: auto;
+        width: 100vw;
+        overflow: auto;
+        font-size: 80%;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .article {
+        min-height: 5vh;
+        max-height: 15vh;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+}
+
+
+.article {
+    padding: 1em 1em;
+    height: 100%;
+    background-color: antiquewhite;
+    /*    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;*/
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    min-width: 20vw;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    transition: all ease 0.2s;
+}
+
+.article:first-child {
+    border-style: solid;
+    border-width: 5px;
+
+    transform: rotate(-1deg);
+}
+
+.article:nth-child(2) {
+    transform: rotate(3deg);
+}
+
+.article:nth-child(3) {
+    transform: rotate(-3deg);
+}
+
+.article:nth-child(4) {
+
+    transform: rotate(-2deg);
+    font-size: 90%;
+}
+
+.article:nth-child(5) {
+    transform: rotate(-3deg);
+    font-size: 110%;
+}
+
+.article:nth-child(6) {
+    transform: rotate(1deg);
+    font-size: 120%;
+}
+
+
+.article:nth-child(7) {
+    transform: rotate(-2deg);
+    font-size: 110%;
+
+}
+
+.body-text {
+    display: inline;
+}
+
+.article:hover {
+    transform: rotate(2deg);
+}
+
+p {
+    display: inline;
+    font-size: 110%;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    display: inherit;
+    font-size: 140%;
+    font-style: italic;
+    font-weight: 800;
+}
+
+.image img {
+    position: fixed;
+    width: 150px;
+    mix-blend-mode: normal;
+    transition: all ease 1s;
+
+}
+
+
+#cabbage {
+    top: 15%;
+    left: 60%;
+}
+
+#potato {
+    top: 80%;
+    left: 15%;
+}
+
+#flower {
+    top: 55%;
+    left: 95%;
+}
+
+
+html.translated-ltr .article {
+    /*    transform: translateX(300px) translateY(200px);*/
+    transform: rotateZ(2160deg) rotateY(360deg);
+}
+
+html.translated-ltr img {
+    filter: opacity(0);
+}
+
+
+.header-text {
+    display: flex;
+    justify-content: center;
+    /*        padding: 0 0;*/
+    /*    font-size: 200%;*/
+}
