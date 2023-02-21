@@ -90,7 +90,7 @@ body {
     grid-row: span 1;
     grid-row-start: span 1;
     grid-column-end: auto;
-    transform: rotate(2deg);
+    transform: rotate(3deg);
     font-size: 100%;
     word-spacing: 1px;
 }
