@@ -1,4 +1,5 @@
 body {
+
     /*
     height: 100vh;
     width: 100vw;
@@ -14,24 +15,11 @@ body {
     word-spacing: -3px;
 }
 
-/*
-.header-text {
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-    flex-direction: column;
-    padding: 1em 1em;
-    margin: 1em 1em;
-    height: 15%;
-}*/
 
 
 .container {
+    margin: 0em 0em;
     height: 100%;
-    /*
-    height: 80%;
-    width: 80%;
-*/
     text-align: left;
     display: grid;
     grid-gap: 1em;
@@ -47,6 +35,7 @@ body {
 }
 
 .article:first-child {
+    /*    padding: 1em 1em;*/
     grid-column: span 1;
     grid-column-start: span 1;
     grid-column-end: auto;
@@ -59,15 +48,20 @@ body {
     grid-row-start: span 2;
     grid-row-end: auto;
     writing-mode: vertical-rl;
-    transform: rotate(3deg);
+    transform: rotate(5deg);
+    font-size: 130%;
+    line-height: 1.5em;
 }
 
 .article:nth-child(3) {
+    margin-left: -2em;
     grid-row: span 4;
     grid-row-start: span 4;
     grid-row-end: auto;
     transform: rotate(3deg);
-    font-size: 105%;
+    font-size: 104%;
+    letter-spacing: 1px;
+    text-align: right;
 }
 
 .article:nth-child(4) {
@@ -78,14 +72,16 @@ body {
     grid-row-end: auto;
     transform: rotate(-2deg);
     font-size: 90%;
+    word-spacing: 1.5px;
+
 }
 
 .article:nth-child(5) {
     grid-row: span 2;
     grid-row-start: span 2;
     grid-row-end: auto;
-    transform: rotate(4deg);
-    font-size: 110%;
+    transform: rotate(-2deg);
+    line-height: 1.4em;
 }
 
 .article:nth-child(6) {
@@ -94,8 +90,9 @@ body {
     grid-row: span 1;
     grid-row-start: span 1;
     grid-column-end: auto;
-    transform: rotate(1deg);
+    transform: rotate(2deg);
     font-size: 100%;
+    word-spacing: 1px;
 }
 
 
@@ -136,7 +133,18 @@ html.translated-ltr .container {
     letter-spacing: -1px;
     word-spacing: 0px;
     display: block;
+    /*    grid-template-columns: repeat(2, 1fr);*/
+    /*    height: 80%;*/
 }
+
+/*
+html.translated-ltr .article {
+    width: 120%;
+    height: 190%;
+    padding: 1em 1em;
+    line-height: 1.1em;
+}*/
+
 
 /*
     transform: scaleY(105%);
