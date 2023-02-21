@@ -1,89 +1,110 @@
 body {
+    /*
     height: 100vh;
     width: 100vw;
+*/
+
+    height: calc(100vh - 3em);
+    margin: 1.5em 1.5em;
     box-sizing: border-box;
-    margin: 0 0;
     overflow: hidden;
-    font-family: 'Literata', serif;
-    background-color: rosybrown;
+    font-family: monospace;
+    background-color: antiquewhite;
     letter-spacing: -1px;
+    word-spacing: -3px;
 }
+
+/*
+.header-text {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 1em 1em;
+    margin: 1em 1em;
+    height: 15%;
+}*/
+
 
 .container {
     height: 100%;
-    overflow-y: hidden;
+    /*
+    height: 80%;
+    width: 80%;
+*/
     text-align: left;
-    display: flex;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
 }
-
-@media only screen and (max-width: 600px) {
-    body {
-        height: auto;
-        width: 100vw;
-        overflow: auto;
-        font-size: 80%;
-    }
-
-    .container {
-        flex-direction: column;
-    }
-
-    .article {
-        min-height: 5vh;
-        max-height: 15vh;
-        overflow-x: hidden;
-        overflow-y: scroll;
-    }
-}
-
 
 .article {
-    padding: 1em 1em;
+    padding: 0.5em 0.5em;
     height: 100%;
-    background-color: antiquewhite;
-    /*    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;*/
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-    min-width: 19vw;
-
-    overflow-x: hidden;
-    overflow-y: scroll;
-
+    overflow: scroll;
     transition: all ease 0.2s;
 }
 
 .article:first-child {
-    transform: rotate(-1deg);
+    grid-column: span 1;
+    grid-column-start: span 1;
+    grid-column-end: auto;
+    /*    transform: rotate(-1deg);*/
+    font-size: 90%;
 }
 
 .article:nth-child(2) {
+    grid-row: span 2;
+    grid-row-start: span 2;
+    grid-row-end: auto;
+    writing-mode: vertical-rl;
     transform: rotate(3deg);
 }
 
 .article:nth-child(3) {
-    transform: rotate(-3deg);
+    grid-row: span 4;
+    grid-row-start: span 4;
+    grid-row-end: auto;
+    transform: rotate(3deg);
+    font-size: 105%;
 }
 
 .article:nth-child(4) {
-
+    writing-mode: vertical-rl;
+    /*    transform: rotate(180deg);*/
+    grid-row: span 3;
+    grid-row-start: span 3;
+    grid-row-end: auto;
     transform: rotate(-2deg);
     font-size: 90%;
 }
 
 .article:nth-child(5) {
-    transform: rotate(-3deg);
+    grid-row: span 2;
+    grid-row-start: span 2;
+    grid-row-end: auto;
+    transform: rotate(4deg);
     font-size: 110%;
 }
 
 .article:nth-child(6) {
+    grid-column: span 1;
+    grid-column-start: span 2;
+    grid-row: span 1;
+    grid-row-start: span 1;
+    grid-column-end: auto;
     transform: rotate(1deg);
-    font-size: 120%;
+    font-size: 100%;
 }
 
 
 .article:nth-child(7) {
-    transform: rotate(-2deg);
-    font-size: 110%;
-
+    grid-row: span 1;
+    grid-row-start: span 1;
+    grid-row-end: auto;
+    transform: rotate(-1deg);
+    font-size: 115%;
 }
 
 .body-text {
@@ -96,56 +117,29 @@ body {
 
 p {
     display: inline;
-    font-size: 110%;
+    font-size: 140%;
 }
 
 h2 {
     margin: 0;
     padding: 0;
     display: inherit;
-    font-size: 140%;
+    font-size: 170%;
     font-style: italic;
     font-weight: 800;
 }
 
-.image img {
-    position: fixed;
-    width: 150px;
-    mix-blend-mode: normal;
-    transition: all ease 1s;
 
+html.translated-ltr .container {
+    font-family: "Literata";
+    font-size: 80%;
+    letter-spacing: -1px;
+    word-spacing: 0px;
+    display: block;
 }
 
+/*
+    transform: scaleY(105%);
+    transform: scaleX(105%);*/
 
-#cabbage {
-    top: 15%;
-    left: 60%;
-}
-
-#potato {
-    top: 80%;
-    left: 15%;
-}
-
-#flower {
-    top: 55%;
-    left: 95%;
-}
-
-
-html.translated-ltr .article {
-    transform: translateX(300px) translateY(200px);
-    /*    transform: rotateZ(2160deg) rotateY(360deg);*/
-}
-
-html.translated-ltr img {
-    filter: opacity(0);
-}
-
-
-.header-text {
-    display: flex;
-    justify-content: center;
-    /*        padding: 0 0;*/
-    /*    font-size: 200%;*/
 }
