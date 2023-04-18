@@ -7,8 +7,12 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: red;
+    border: 3px solid orangered;
     cursor: move;
+}
+
+#circle:hover {
+    background-color: orangered;
 }
 
 body {
