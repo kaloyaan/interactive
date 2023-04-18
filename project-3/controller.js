@@ -7,13 +7,31 @@ const images = [
   ["blue-1.jpeg", "blue-2.jpeg", "blue-3.jpeg", "blue-4.jpeg", "blue-5.jpeg"],
 ];
 
+
 let isDragging = false;
 
+// Add listeners for mouse and touch events
 circle.addEventListener("mousedown", () => {
     isDragging = true;
 });
 
-document.addEventListener("mousemove", (event) => {
+circle.addEventListener("touchstart", (event) => {
+    isDragging = true;
+    event.preventDefault();
+});
+
+document.addEventListener("mousemove", handleMove);
+document.addEventListener("touchmove", handleMove);
+
+document.addEventListener("mouseup", () => {
+    isDragging = false;
+});
+
+document.addEventListener("touchend", () => {
+    isDragging = false;
+});
+
+function handleMove(event) {
     if (isDragging) {
         const containerRect = image.getBoundingClientRect();
         const containerWidth = containerRect.width;
@@ -24,8 +42,14 @@ document.addEventListener("mousemove", (event) => {
         const circleHeight = circleRect.height;
 
         // Calculate the position of the circle within the container
-        let x = event.clientX - containerRect.left - (circleWidth / 2);
-        let y = event.clientY - containerRect.top - (circleHeight / 2);
+        let x, y;
+        if (event.touches) {
+            x = event.touches[0].clientX - containerRect.left - (circleWidth / 2);
+            y = event.touches[0].clientY - containerRect.top - (circleHeight / 2);
+        } else {
+            x = event.clientX - containerRect.left - (circleWidth / 2);
+            y = event.clientY - containerRect.top - (circleHeight / 2);
+        }
 
         // Constrain the position of the circle within the container
         x = Math.max(0, Math.min(x, containerWidth - circleWidth));
@@ -43,8 +67,4 @@ document.addEventListener("mousemove", (event) => {
         const imageSrc = "img/" + images[row][column];
         image.setAttribute("src", imageSrc);
     }
-});
-
-document.addEventListener("mouseup", () => {
-    isDragging = false;
-});
+}

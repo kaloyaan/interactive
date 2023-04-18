@@ -18,11 +18,19 @@
 body {
     height: 100vh;
     width: 100vw;
+    background-color: dimgrey;
     /*    overflow: hidden;*/
 }
 
 img {
+    object-fit: contain;
     max-height: 600px;
     object-fit: contain;
     user-select: none;
+    /*    margin: 1em 1em;*/
+}
+
+#image {
+    max-height: 600px;
+    pointer-events: none;
 }
