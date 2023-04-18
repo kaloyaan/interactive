@@ -73,3 +73,33 @@ function handleMove(event) {
         image.setAttribute("src", imageSrc);
     }
 }
+
+function handleOrientation(event) {
+    const containerRect = image.getBoundingClientRect();
+    const containerWidth = containerRect.width;
+    const containerHeight = containerRect.height;
+
+    const circleRect = circle.getBoundingClientRect();
+    const circleWidth = circleRect.width;
+    const circleHeight = circleRect.height;
+
+    const maxRotation = 20;
+    const x = containerWidth * (Math.max(-maxRotation, Math.min(maxRotation, event.gamma)) / (2 * maxRotation) + 0.5);
+    const y = containerHeight * (Math.max(-maxRotation, Math.min(maxRotation, event.beta)) / (2 * maxRotation) + 0.5);
+
+    // Constrain the position of the circle within the container
+    const clampedX = Math.max(0, Math.min(x, containerWidth - circleWidth));
+    const clampedY = Math.max(0, Math.min(y, containerHeight - circleHeight));
+
+    // Set the position of the circle
+    circle.style.left = `${clampedX}px`;
+    circle.style.top = `${clampedY}px`;
+
+    // Calculate the row and column indexes based on the position of the circle within the container
+    const row = Math.floor((clampedY / containerHeight) * images.length);
+    const column = Math.floor((clampedX / containerWidth) * images[row].length);
+
+    // Get the image source at the calculated row and column and set it as the src attribute of the img element
+    const imageSrc = "img/" + images[row][column];
+    image.src = imageSrc;
+}
