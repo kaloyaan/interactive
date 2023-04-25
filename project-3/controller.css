@@ -5,7 +5,7 @@ html {
 
 #text {
     /*    height: 30%;*/
-    margin: 0.5em;
+    margin: 1em;
 }
 
 /*
@@ -103,14 +103,16 @@ img {
 span {
     position: relative;
     font-size: 1.8em;
+    display: inline-block;
 }
 
 #heading {
-    margin: 0.5em;
+    margin: 1em;
 }
 
 #subtitle {
-    margin: 0.5em;
+    /*    margin: 0.5em;
+    */
     margin-bottom: 0em;
 }
 
