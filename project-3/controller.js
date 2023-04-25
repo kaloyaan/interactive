@@ -1,6 +1,7 @@
 const image = document.getElementById("image");
 const circle = document.getElementById("circle");
 const container = document.getElementById("container");
+const caption = document.getElementById("caption");
 
 // Define a 2D array of image sources
 const images = [
@@ -36,6 +37,11 @@ const images = [
   "white-4.png",
   "white-5.png"
 ]];
+
+const captions = ["Black suede with yellow leather back highlight and yellow shoelace hole. Black laces. Color combination idea came from browsing materials in Katia's studio. Worn 2021-2023.",
+                  "High-top. Navy leather with off-white shoelaces (originally brown, replaced in 2022). Direct imitation of Vans Sk8-Hi, designers even copied the stripe. Worn 2021-2022.", "High-top. Dark navy leather with black laces. Present from dad who originally made them for himself. I didn't want to wear initially, didn't like the look. Ended up not taking them off all winter because they were so comfortable. Worn 2023.",
+                  "White leather with embroidered piece of cordura fabric. Black cordura collar on back. Icon is Happy Mac face by Susan Kare. Other shoe has Sad Mac. Full family collaboration - I asked mom to do the embroidery, but the fabric was too thick and she wasn't happy with the roughness of the stitches. Dad ended up doing them himself. Worn 2022.",
+                  "Red suede with red laces. Laces where originally white, replaced with red after the suede colored them too much. Metal shoelace hole caps. Has lasted through all the high school and college parties. Worn 2019-2022.", "White leather with blue suede collar on back. Suede collar on tongue as well. Other shoe has green collar. I used to pair them with a non-matching green-yellow pair of socks. Worn 2021-2022."];
 
 let isDragging = false;
 
@@ -98,35 +104,6 @@ function handleMove(event) {
         // Get the image source at the calculated row and column and set it as the src attribute of the img element
         const imageSrc = "img/transparent-bg/" + images[row][column];
         image.setAttribute("src", imageSrc);
+        caption.textContent = captions[row];
     }
 }
-//
-//function handleOrientation(event) {
-//    const containerRect = image.getBoundingClientRect();
-//    const containerWidth = containerRect.width;
-//    const containerHeight = containerRect.height;
-//
-//    const circleRect = circle.getBoundingClientRect();
-//    const circleWidth = circleRect.width;
-//    const circleHeight = circleRect.height;
-//
-//    const maxRotation = 20;
-//    const x = containerWidth * (Math.max(-maxRotation, Math.min(maxRotation, event.gamma)) / (2 * maxRotation) + 0.5);
-//    const y = containerHeight * (Math.max(-maxRotation, Math.min(maxRotation, event.beta)) / (2 * maxRotation) + 0.5);
-//
-//    // Constrain the position of the circle within the container
-//    const clampedX = Math.max(0, Math.min(x, containerWidth - circleWidth));
-//    const clampedY = Math.max(0, Math.min(y, containerHeight - circleHeight));
-//
-//    // Set the position of the circle
-//    circle.style.left = `${clampedX}px`;
-//    circle.style.top = `${clampedY}px`;
-//
-//    // Calculate the row and column indexes based on the position of the circle within the container
-//    const row = Math.floor((clampedY / containerHeight) * images.length);
-//    const column = Math.floor((clampedX / containerWidth) * images[row].length);
-//
-//    // Get the image source at the calculated row and column and set it as the src attribute of the img element
-//    const imageSrc = "img/" + images[row][column];
-//    image.src = imageSrc;
-//}

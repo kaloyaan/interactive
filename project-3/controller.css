@@ -7,11 +7,13 @@ html {
 #text {
     height: 50%;
     margin: 1em;
-
 }
+
 
 #image-viewer {
     /*    height: 50%;*/
+    margin-top: 0em;
+
 }
 
 #circle {
@@ -23,6 +25,7 @@ html {
     background-color: orangered;
     cursor: move;
     z-index: 1;
+    /*    top: 40%;*/
 }
 
 #circle:hover {
@@ -47,6 +50,7 @@ img {
 #image {
     /*    max-height: 600px;*/
     pointer-events: none;
+    margin-top: 0em;
 }
 
 
@@ -76,4 +80,17 @@ span {
 
 #heading {
     margin: 1em;
+}
+
+#subtitle {
+    margin: 1em;
+    margin-bottom: 0em;
+}
+
+#caption {
+    /*    height: 10%;*/
+    /*    margin: 1em;*/
+    font-size: 1rem;
+    font-family: monospace;
+    text-align: left;
 }
