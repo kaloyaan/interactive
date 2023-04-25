@@ -3,15 +3,10 @@ html {
     box-sizing: border-box;
 }
 
-/*
-* {
-    border-style: solid;
-}
-*/
 
 
 #text {
-    height: 50%;
+    /*    height: 30%;*/
     margin: 0.5em;
 }
 
@@ -19,7 +14,6 @@ html {
 #image-viewer {
     /*    height: 50%;*/
     margin-top: 0em;
-
 }
 
 #circle {
@@ -48,7 +42,6 @@ body {
 img {
     object-fit: contain;
     width: 100%;
-    object-fit: contain;
     user-select: none;
     /*        margin: 1em 1em;*/
 }
@@ -59,8 +52,7 @@ img {
     margin-top: 0em;
 }
 
-
-
+/*
 *,
 ::before,
 ::after {
@@ -68,16 +60,30 @@ img {
     padding: 0;
     box-sizing: inherit;
 }
+*/
 
 #container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     height: 100%;
     /*    margin: 1em;
     */
 }
+
+#container-top {
+    height: 50%;
+}
+
+#container-bottom {
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+
 
 span {
     position: relative;
@@ -94,8 +100,8 @@ span {
 }
 
 #caption {
-    /*    height: 10%;*/
-    /*    margin: 1em;*/
+    /*    height: 20%;*/
+    margin: 1em;
     font-size: 0.8rem;
     font-family: monospace;
     text-align: left;
