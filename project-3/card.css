@@ -23,13 +23,18 @@ html {
     height: 100vh;
     position: sticky;
     top: 0;
-    box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1), 0 -1px 2px rgba(0, 0, 0, 0.25);
+    /*    box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1), 0 -1px 2px rgba(0, 0, 0, 0.25);*/
 }
 
-.stack__card p {
-    width: 50%;
-    font-size: 5rem;
-    height: auto;
+.stack__card img {
+    position: absolute;
+    z-index: 1;
+}
+
+.stack__card span {
+    position: relative;
+    height: 100vh;
+    font-size: 2.3em;
 }
 
 img {
@@ -37,21 +42,21 @@ img {
 }
 
 .stack__card:nth-child(1) {
-    background-color: #e3342f;
+    background-color: whitesmoke;
 }
 
 .stack__card:nth-child(2) {
-    background-color: #38c172;
+    /*    background-color: #38c172;*/
 }
 
 .stack__card:nth-child(3) {
-    background-color: #3490dc;
+    /*    background-color: #3490dc;*/
 }
 
 .stack__card:nth-child(4) {
-    background-color: #f66d9b;
+    /*    background-color: #f66d9b;*/
 }
 
 .stack__card:nth-child(5) {
-    background-color: #f6993f;
+    /*    background-color: #f6993f;*/
 }
