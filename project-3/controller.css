@@ -8,6 +8,11 @@ html {
     margin: 0.5em;
 }
 
+/*
+* {
+    border: solid;
+}
+*/
 
 #image-viewer {
     /*        height: 50%;*/
@@ -36,7 +41,7 @@ body {
     /*
     height: 100vh;
     width: 100vw;*/
-    overflow: hidden;
+    /*    overflow: hidden;*/
     margin: 0;
     padding: 0;
 }
@@ -97,7 +102,7 @@ img {
 
 span {
     position: relative;
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 #heading {
@@ -112,7 +117,7 @@ span {
 #caption {
     /*    height: 20%;*/
     margin: 1em;
-    font-size: 1em;
+    font-size: 1.2em;
     font-family: monospace;
-    text-align: left;
+    /*    text-align: left;*/
 }
