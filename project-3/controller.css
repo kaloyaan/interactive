@@ -1,6 +1,6 @@
 html {
     font-family: sans-serif;
-    box-sizing: border-box;
+    /*    box-sizing: border-box;*/
 }
 
 #text {
@@ -10,7 +10,7 @@ html {
 
 
 #image-viewer {
-    /*    height: 50%;*/
+    /*        height: 50%;*/
     margin-top: 0em;
 }
 
@@ -23,7 +23,8 @@ html {
     background-color: orangered;
     cursor: move;
     z-index: 1;
-    top: 45%;
+    top: 50%;
+    left: 50%;
 }
 
 /*
@@ -34,10 +35,10 @@ html {
 body {
     /*
     height: 100vh;
-    width: 100vw;
-*/
+    width: 100vw;*/
     overflow: hidden;
     margin: 0;
+    padding: 0;
 }
 
 img {
@@ -65,7 +66,6 @@ img {
 
 #container {
     display: flex;
-
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
@@ -75,7 +75,7 @@ img {
 }
 
 #container-top {
-    height: 50%;
+    height: 40vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -84,7 +84,7 @@ img {
 }
 
 #container-bottom {
-    height: 50%;
+    height: 60vh;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -94,7 +94,7 @@ img {
 
 span {
     position: relative;
-    font-size: 2rem;
+    font-size: 1.5em;
 }
 
 #heading {
@@ -109,7 +109,7 @@ span {
 #caption {
     /*    height: 20%;*/
     margin: 1em;
-    font-size: 0.8rem;
+    font-size: 1em;
     font-family: monospace;
     text-align: left;
 }
