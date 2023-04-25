@@ -3,8 +3,6 @@ html {
     box-sizing: border-box;
 }
 
-
-
 #text {
     /*    height: 30%;*/
     margin: 0.5em;
@@ -34,8 +32,10 @@ html {
 }*/
 
 body {
+    /*
     height: 100vh;
     width: 100vw;
+*/
     overflow: hidden;
     margin: 0;
 }
@@ -75,7 +75,7 @@ img {
 }
 
 #container-top {
-    height: 40%;
+    height: 50vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -84,7 +84,7 @@ img {
 }
 
 #container-bottom {
-    height: 50%;
+    height: 50vh;
     display: flex;
     justify-content: flex-end;
     align-items: center;
