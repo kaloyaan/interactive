@@ -75,7 +75,7 @@ img {
 }
 
 #container-top {
-    height: 50vh;
+    height: 50%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -84,7 +84,7 @@ img {
 }
 
 #container-bottom {
-    height: 50vh;
+    height: 50%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
