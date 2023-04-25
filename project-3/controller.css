@@ -76,6 +76,7 @@ img {
 
 #container-top {
     height: 40vh;
+    width: 100vw;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -85,9 +86,10 @@ img {
 
 #container-bottom {
     height: 60vh;
+    width: 100vw;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: baseline;
     flex-direction: column;
 }
 
