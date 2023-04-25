@@ -74,13 +74,13 @@ img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100%;
+    /*    height: 100%;*/
     /*    margin: 1em;
     */
 }
 
 #container-top {
-    /*    height: 40%;*/
+    height: 40%;
     width: 100vw;
     display: flex;
     justify-content: flex-start;
@@ -90,7 +90,7 @@ img {
 }
 
 #container-bottom {
-    /*    height: 60%;*/
+    height: 60%;
     width: 100vw;
     display: flex;
     justify-content: flex-end;
@@ -119,11 +119,8 @@ span {
 #caption {
     /*    height: 20%;*/
     margin: 1em;
-<<<<<<< HEAD
     font-size: 0.8em;
-=======
     font-size: 1.2em;
->>>>>>> parent of 39e0a85 (Update controller.css)
     font-family: monospace;
     /*    text-align: left;*/
 }
