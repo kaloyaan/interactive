@@ -70,7 +70,7 @@ img {
 
 #container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100%;
