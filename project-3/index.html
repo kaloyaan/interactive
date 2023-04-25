@@ -1,44 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="main.css" type="text/css" />
-    <link rel="icon" type="image/x-icon" href="fav-1.png">
-    <title>KOLEV & KOLEV</title>
+<html>
+  <head>
+    <title>Draggable Image Switch</title>
+    <link rel="stylesheet" href="controller.css">
 </head>
 
-
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>KOLEV & KOLEV</h1>
+    <div id="container">
+        <div id="circle"></div>
+        <div id="heading">
+            <span>Kolev & Kolev. 2016-2022
+                Sofia, Bulgaria</span>
         </div>
-        <div class="content">
-            <div class="frame">
-                <p>This is an archive of an indirect creative collaboration between <a onclick="document.getElementById('frame-bottom').src='kaloyan.html'">Kaloyan Kolev</a>, Ivan Kolev and the employees of the children shoe company Kolev & Kolev AD.
-                </p>
-            </div>
+        <div id="text">
+            <span>
+                This is an archive of an indirect creative collaboration between Kaloyan Kolev, Ivan Kolev and the employees of the children shoe company Kolev & Kolev AD.
+            </span>
         </div>
-        <div class="shoes">
-            <div class="shoe">
-                <img src="img/pictograms/1.png" alt="1">
-                <p>Blue</p>
-            </div>
-            <div class="shoe">
-                <img src="img/pictograms/2.png" alt="1">
-                <p>Red</p>
-            </div>
-            <div class="shoe">
-                <img src="img/pictograms/3.png" alt="1">
-                <p>White</p>
-            </div>
-
-
+        <div id="image-viewer">
+            <img id="image" src="img/white-1.jpeg" alt="Image">
         </div>
-
     </div>
 </body>
-
-</html>
+<script src="controller.js"></script></html>
