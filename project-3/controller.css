@@ -79,7 +79,7 @@ img {
 }
 
 #container-top {
-    height: 40%;
+    /*    height: 40%;*/
     width: 100vw;
     display: flex;
     justify-content: flex-start;
@@ -89,7 +89,7 @@ img {
 }
 
 #container-bottom {
-    height: 60%;
+    /*    height: 60%;*/
     width: 100vw;
     display: flex;
     justify-content: flex-end;
@@ -118,7 +118,7 @@ span {
 #caption {
     /*    height: 20%;*/
     margin: 1em;
-    font-size: 1em;
+    font-size: 0.8em;
     font-family: monospace;
     /*    text-align: left;*/
 }
