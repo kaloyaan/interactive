@@ -35,7 +35,7 @@ document.addEventListener("touchend", () => {
 //window.addEventListener("deviceorientation", handleOrientation);
 
 function handleMove(event) {
-    if (isDragging || event.type === 'deviceorientation') {
+    if (isDragging) {
         const containerRect = container.getBoundingClientRect();
         const containerWidth = containerRect.width;
         const containerHeight = containerRect.height;
@@ -49,9 +49,6 @@ function handleMove(event) {
         if (event.touches) {
             x = event.touches[0].clientX - containerRect.left - (circleWidth / 2);
             y = event.touches[0].clientY - containerRect.top - (circleHeight / 2);
-        } else if (event.type === 'deviceorientation') {
-            x = containerWidth * ((event.gamma + 90) / 180);
-            y = containerHeight * ((event.beta + 90) / 180);
         } else {
             x = event.clientX - containerRect.left - (circleWidth / 2);
             y = event.clientY - containerRect.top - (circleHeight / 2);
