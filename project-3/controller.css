@@ -23,8 +23,8 @@ html {
     background-color: orangered;
     cursor: move;
     z-index: 1;
-    top: 50%;
-    left: 50%;
+    top: 40%;
+    left: 40%;
 }
 
 /*
@@ -89,7 +89,8 @@ img {
     width: 100vw;
     display: flex;
     justify-content: flex-end;
-    align-items: baseline;
+    /*    align-items: baseline;
+    */
     flex-direction: column;
 }
 
