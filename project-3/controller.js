@@ -4,9 +4,38 @@ const container = document.getElementById("container");
 
 // Define a 2D array of image sources
 const images = [
-  ["white-1.jpeg", "white-2.jpeg", "white-3.jpeg", "white-4.jpeg", "white-5.jpeg"],
-  ["blue-1.jpeg", "blue-2.jpeg", "blue-3.jpeg", "blue-4.jpeg", "blue-5.jpeg"],
-];
+[
+  "black-1.png",
+  "black-2.png",
+  "black-3.png",
+  "black-4.png",
+  "black-5.png"],
+["hi-1.png",
+  "hi-2.png",
+  "hi-3.png",
+  "hi-4.png",
+  "hi-5.png"],
+["hi-black-1.png",
+  "hi-black-2.png",
+  "hi-black-3.png",
+  "hi-black-4.png",
+  "hi-black-5.png"],
+["kare-1.png",
+  "kare-2.png",
+  "kare-3.png",
+  "kare-4.png",
+  "kare-5.png"],
+["red-1.png",
+  "red-2.png",
+  "red-3.png",
+  "red-4.png",
+  "red-5.png"],
+["white-1.png",
+  "white-2.png",
+  "white-3.png",
+  "white-4.png",
+  "white-5.png"
+]];
 
 let isDragging = false;
 
@@ -67,7 +96,7 @@ function handleMove(event) {
         const column = Math.floor((x / containerWidth) * images[row].length);
 
         // Get the image source at the calculated row and column and set it as the src attribute of the img element
-        const imageSrc = "img/" + images[row][column];
+        const imageSrc = "img/transparent-bg/" + images[row][column];
         image.setAttribute("src", imageSrc);
     }
 }
