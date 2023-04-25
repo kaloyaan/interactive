@@ -20,12 +20,13 @@ html {
 
 #circle {
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
     border: 3px solid orangered;
     background-color: orangered;
     cursor: move;
+    z-index: 1;
 }
 
 #circle:hover {
@@ -53,10 +54,6 @@ img {
 }
 
 
-.header {
-    text-align: center;
-}
-
 
 *,
 ::before,
@@ -78,9 +75,8 @@ img {
 
 span {
     position: relative;
-    font-size: 5em;
+    font-size: 2rem;
 }
-
 #heading {
     margin: 1em;
 }
