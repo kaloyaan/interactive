@@ -25,12 +25,13 @@ html {
     background-color: orangered;
     cursor: move;
     z-index: 1;
-    /*    top: 40%;*/
+    top: 45%;
 }
 
+/*
 #circle:hover {
     background-color: orangered;
-}
+}*/
 
 body {
     height: 100vh;
@@ -64,7 +65,8 @@ img {
 
 #container {
     display: flex;
-    justify-content: space-evenly;
+
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     height: 100%;
