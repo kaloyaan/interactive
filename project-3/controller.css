@@ -38,11 +38,12 @@ html {
 }*/
 
 body {
+
     height: 100%;
     width: 100%;
     /*    overflow: hidden;*/
-    margin: auto;
-    padding: auto;
+    margin: 0;
+    padding: 0;
 }
 
 img {
@@ -118,7 +119,11 @@ span {
 #caption {
     /*    height: 20%;*/
     margin: 1em;
+<<<<<<< HEAD
     font-size: 0.8em;
+=======
+    font-size: 1.2em;
+>>>>>>> parent of 39e0a85 (Update controller.css)
     font-family: monospace;
     /*    text-align: left;*/
 }
