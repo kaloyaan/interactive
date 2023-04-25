@@ -3,10 +3,16 @@ html {
     box-sizing: border-box;
 }
 
+/*
+* {
+    border-style: solid;
+}
+*/
+
 
 #text {
     height: 50%;
-    margin: 1em;
+    margin: 0.5em;
 }
 
 
@@ -79,18 +85,18 @@ span {
 }
 
 #heading {
-    margin: 1em;
+    margin: 0.5em;
 }
 
 #subtitle {
-    margin: 1em;
+    margin: 0.5em;
     margin-bottom: 0em;
 }
 
 #caption {
     /*    height: 10%;*/
     /*    margin: 1em;*/
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-family: monospace;
     text-align: left;
 }
