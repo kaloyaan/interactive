@@ -28,6 +28,8 @@ html {
 
 .stack__card img {
     position: absolute;
+    top: 5%;
+    width: 100%;
     z-index: 1;
 }
 
@@ -46,17 +48,50 @@ img {
 }
 
 .stack__card:nth-child(2) {
+    /*        background-color: whitesmoke;*/
+
     /*    background-color: #38c172;*/
 }
 
+.stack__card:nth-child(2) img {
+    top: 5%;
+}
+
 .stack__card:nth-child(3) {
+    /*    background-color: whitesmoke;*/
     /*    background-color: #3490dc;*/
 }
+
+.stack__card:nth-child(3) img {
+    top: 15%;
+}
+
 
 .stack__card:nth-child(4) {
     /*    background-color: #f66d9b;*/
 }
 
+.stack__card:nth-child(4) img {
+    top: 25%;
+}
+
+
 .stack__card:nth-child(5) {
     /*    background-color: #f6993f;*/
+}
+
+.stack__card:nth-child(5) img {
+    top: 35%;
+}
+
+.stack__card:nth-child(6) img {
+    top: 45%;
+}
+
+.stack__card:nth-child(7) img {
+    top: 55%;
+}
+
+.stack__card:nth-child(8) img {
+    top: 65%;
 }
