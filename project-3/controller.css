@@ -3,10 +3,6 @@ html {
     box-sizing: border-box;
 }
 
-#container {
-    position: relative;
-    height: 100vh;
-}
 
 #text {
     height: 50%;
@@ -68,7 +64,7 @@ img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     /*    margin: 1em;
     */
 }
@@ -77,6 +73,7 @@ span {
     position: relative;
     font-size: 2rem;
 }
+
 #heading {
     margin: 1em;
 }
