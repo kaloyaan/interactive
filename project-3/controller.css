@@ -38,9 +38,9 @@ html {
 }*/
 
 body {
-    /*
-    height: 100vh;
-    width: 100vw;*/
+
+    height: 100%;
+    width: 100%;
     /*    overflow: hidden;*/
     margin: 0;
     padding: 0;
@@ -80,7 +80,7 @@ img {
 }
 
 #container-top {
-    height: 40vh;
+    height: 40%;
     width: 100vw;
     display: flex;
     justify-content: flex-start;
@@ -90,7 +90,7 @@ img {
 }
 
 #container-bottom {
-    height: 60vh;
+    height: 60%;
     width: 100vw;
     display: flex;
     justify-content: flex-end;
