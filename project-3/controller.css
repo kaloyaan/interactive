@@ -21,14 +21,14 @@ html {
 
 #circle {
     position: absolute;
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     border: 3px solid orangered;
     background-color: orangered;
     cursor: move;
     z-index: 1;
-    top: 40%;
+    top: 43%;
     left: 40%;
 }
 

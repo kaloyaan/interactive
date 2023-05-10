@@ -1,0 +1,48 @@
+#content {
+    margin: 1em 1em;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em;
+    gap: 1em;
+}
+
+#website {
+    display: flex;
+    gap: 1em;
+    width: 100%;
+}
+
+#text {
+    width: 90%;
+}
+
+h1 {
+    font-family: sans-serif;
+}
+
+iframe {
+    width: 100%;
+}
+
+
+p {
+    font-family: sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+video {
+    width: 100%;
+}
+
+#pictures {
+    display: grid;
+    align-items: center;
+    justify-items: auto;
+    justify-content: auto;
+    grid-template-columns: 50% 50%;
+    grid-gap: 1em;
+
+}
